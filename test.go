@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./prettytable"
+	"github.com/eyotang/prettytable/prettytable"
 )
 
 var table = [][]string{
