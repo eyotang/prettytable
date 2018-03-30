@@ -123,8 +123,8 @@ func createSectionLine(sectionLengths []int) string {
 }
 
 func getContentPadded(content string, sectionLength int) string {
-	if sectionLength > len(content) {
-		return content + strings.Repeat(" ", sectionLength - len(content))
+	if sectionLength > stringLength(content) {
+		return content + strings.Repeat(" ", sectionLength - stringLength(content))
 	} else {
 		return content
 	}
