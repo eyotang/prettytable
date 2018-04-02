@@ -32,7 +32,7 @@ func calculateSectionLengths(labels []string, table [][]string) []int {
 	for i := 0 ; i < len(table) ; i += 1 {
 		for j := 0 ; j < len(table[i]) ; j += 1 {
 			content := table[i][j]
-			if len(content) > largest[j] {
+			if stringLength(content) > largest[j] {
 				largest[j] = stringLength(content)
 			}
 		}
